@@ -1,1 +1,18 @@
 <p>maintenance-list works!</p>
+<div>
+    <table>
+        <tr>
+            <th>Issue</th>
+            <th>Photo</th>
+            <th>Room</th>
+            <th>Time</th>
+        </tr>
+        <tr *ngFor="let notice of maintenanceComplaintList">
+            <td>{{notice.issue}}</td>
+            <td>{{notice.desciption}}</td>
+            <td>{{notice.photo}}</td>
+            <td>{{notice.roomnumber}}</td>
+            <td>{{notice.time}}</td>
+        </tr>
+    </table>
+</div>

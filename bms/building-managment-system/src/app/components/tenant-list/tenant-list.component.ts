@@ -15,7 +15,7 @@ export class TenantListComponent {
   }
 
   // tenant list to hold tenant objects
-  tenantList: Tenant[] = [];
+  tenantList: any;
 
   // fetch tenant list logic
   fetchTenants(tenantList: any) {

@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { MaintenanceComplaint } from '../maintenance-complaint/maintenance-complaint';
 import { DataService } from 'src/app/services/dataService.service';
 
 @Component({
@@ -12,10 +11,11 @@ export class MaintenanceListComponent {
   // injectable in constructor
   constructor(private dataService: DataService) {
     this.fetchMaintenance();
+
   }
 
   // create a maintenance complaint list of type complaint
-  maintenanceComplaintList: MaintenanceComplaint[] = [];
+  maintenanceComplaintList: any
 
   // fetch maintenance complaints data from db
   fetchMaintenance() {

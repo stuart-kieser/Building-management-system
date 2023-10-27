@@ -11,9 +11,11 @@ import { MaintenanceListComponent } from './components/maintenance-list/maintena
 import { TenantListComponent } from './components/tenant-list/tenant-list.component';
 import { AccountComponent } from './pages/account/account.component';
 import { RoommanagementComponent } from './pages/roommanagement/roommanagement.component';
+import { RoomListComponent } from './components/room-list/room-list.component';
 import { TenantmanagementComponent } from './pages/tenantmanagement/tenantmanagement.component';
 import { MaintenancemanagementComponent } from './pages/maintenancemanagement/maintenancemanagement.component';
 import { LandingComponent } from './pages/landing/landing.component';
+import { NavComponent } from './pages/nav/nav.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,8 @@ import { LandingComponent } from './pages/landing/landing.component';
     TenantmanagementComponent,
     MaintenancemanagementComponent,
     LandingComponent,
+    NavComponent,
+    RoomListComponent,
   ],
   imports: [
     BrowserModule,

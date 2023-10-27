@@ -15,6 +15,7 @@ export class MaintenanceComplaintComponent {
 
   maintenancecomplaint: MaintenanceComplaint = {
     issue: '',
+    desciption: "",
     photo: '', //jpeg?
     roomnumber: NaN,
     time: '',//function to return time of complaint

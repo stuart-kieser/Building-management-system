@@ -31,7 +31,7 @@ export class DataService {
     // put data to an api endpoint
     putData(data: any) {
         // input into db
-        console.log(data)
+        console.log(data);
     }
 
 

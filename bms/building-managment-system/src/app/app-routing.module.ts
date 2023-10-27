@@ -4,12 +4,15 @@ import { LandingComponent } from './pages/landing/landing.component';
 import { MaintenancemanagementComponent } from './pages/maintenancemanagement/maintenancemanagement.component';
 import { RoommanagementComponent } from './pages/roommanagement/roommanagement.component';
 import { TenantmanagementComponent } from './pages/tenantmanagement/tenantmanagement.component';
+import { AccountComponent } from './pages/account/account.component';
 
 const routes: Routes = [
-  { path: 'landing', component: LandingComponent },
+  //redirect on blank path
+  { path: '', pathMatch: "full", component: LandingComponent },
   { path: 'maintenance', component: MaintenancemanagementComponent },
   { path: 'rooms', component: RoommanagementComponent },
-  { path: "tenants", component: TenantmanagementComponent }
+  { path: "tenants", component: TenantmanagementComponent },
+  { path: "account", component: AccountComponent }
 ];
 
 @NgModule({

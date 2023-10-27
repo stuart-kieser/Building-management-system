@@ -1,1 +1,21 @@
 <p>room-list works!</p>
+<div>
+    <table>
+        <tr>
+            <th>Number</th>
+            <th>Type</th>
+            <th>Price</th>
+            <th>Electricity</th>
+            <th>Wifi</th>
+            <th>Status</th>
+        </tr>
+        <tr *ngFor="let room of roomList">
+            <td>{{room.number}}</td>
+            <td>{{room.type}}</td>
+            <td>{{room.price}}</td>
+            <td>{{room.electrcity}}</td>
+            <td>{{room.wifi}}</td>
+            <td>{{room.open}}</td>
+        </tr>
+    </table>
+</div>

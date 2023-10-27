@@ -19,6 +19,7 @@ export class RoomComponent {
     price: 0,
     electricity: 0,
     wifi: true,
+    open: false,
   }
 
 

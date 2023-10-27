@@ -4,4 +4,5 @@ export interface Room {
     price: number;
     electricity: number;
     wifi: boolean;
+    open: boolean;
 }

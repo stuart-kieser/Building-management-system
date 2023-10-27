@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { DataService } from 'src/app/services/dataService.service';
-import { Room } from '../room/room';
 
 @Component({
   selector: 'app-room-list',
@@ -8,15 +7,18 @@ import { Room } from '../room/room';
   styleUrls: ['./room-list.component.sass']
 })
 export class RoomListComponent {
+
+  // injectable in constructor
   constructor(private dataService: DataService) {
-    this.fetchRooms(this.roomList);
+    this.fetchRooms();
   }
 
-  roomList: Room[] = [];
+  // create a maintenance complaint list of type complaint
+  roomList: any;
 
   // fetch maintenance complaints data from db
-  fetchRooms(roomList: any) {
-    this.roomList = this.dataService.fetchroomsList(roomList);
+  fetchRooms() {
+    this.roomList = this.dataService.fetchroomsList(this.roomList);
   }
 
 
