@@ -11,15 +11,15 @@ export class MaintenanceListComponent {
 
   // injectable in constructor
   constructor(private dataService: DataService) {
-    this.fetchMaintenance(this.maintenanceComplaintList)
+    this.fetchMaintenance();
   }
 
   // create a maintenance complaint list of type complaint
   maintenanceComplaintList: MaintenanceComplaint[] = [];
 
   // fetch maintenance complaints data from db
-  fetchMaintenance(maintenanceComplaintList: any) {
-    this.maintenanceComplaintList = this.dataService.fetchData(maintenanceComplaintList);
+  fetchMaintenance() {
+    this.maintenanceComplaintList = this.dataService.fetchmaintenanceData(this.maintenanceComplaintList);
   }
 
 

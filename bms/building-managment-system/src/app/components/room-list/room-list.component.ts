@@ -16,7 +16,7 @@ export class RoomListComponent {
 
   // fetch maintenance complaints data from db
   fetchRooms(roomList: any) {
-    this.roomList = this.dataService.fetchData(roomList);
+    this.roomList = this.dataService.fetchroomsList(roomList);
   }
 
 

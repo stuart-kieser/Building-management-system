@@ -13,6 +13,7 @@ import { AccountComponent } from './pages/account/account.component';
 import { RoommanagementComponent } from './pages/roommanagement/roommanagement.component';
 import { TenantmanagementComponent } from './pages/tenantmanagement/tenantmanagement.component';
 import { MaintenancemanagementComponent } from './pages/maintenancemanagement/maintenancemanagement.component';
+import { LandingComponent } from './pages/landing/landing.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { MaintenancemanagementComponent } from './pages/maintenancemanagement/ma
     RoommanagementComponent,
     TenantmanagementComponent,
     MaintenancemanagementComponent,
+    LandingComponent,
   ],
   imports: [
     BrowserModule,
