@@ -15,7 +15,7 @@ export class RoomComponent {
 
   room: Room = {
     number: 0,
-    type: "",
+    type: "Blank",
     price: 0,
     electricity: 0,
     wifi: true,

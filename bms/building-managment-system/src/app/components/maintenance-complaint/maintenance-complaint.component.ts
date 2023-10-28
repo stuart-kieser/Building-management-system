@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { MaintenanceComplaint } from './maintenance-complaint';
 import { DataService } from 'src/app/services/dataService.service';
+import { NgModel } from '@angular/forms'
 
 @Component({
   selector: 'app-maintenance-complaint',
@@ -13,7 +14,7 @@ export class MaintenanceComplaintComponent {
 
   }
 
-  maintenancecomplaint: MaintenanceComplaint = {
+  ticket: MaintenanceComplaint = {
     issue: '',
     desciption: "",
     photo: '', //jpeg?

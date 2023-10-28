@@ -23,8 +23,5 @@ export class TenantComponent {
     paymentStatus: false,
   }
 
-  sendTenant() {
-    this.dataService.putData(this.tenant);
-  }
 
 }
