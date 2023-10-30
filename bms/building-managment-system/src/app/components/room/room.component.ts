@@ -5,7 +5,7 @@ import { DataService } from 'src/app/services/dataService.service';
 @Component({
   selector: 'app-room',
   templateUrl: './room.component.html',
-  styleUrls: ['./room.component.sass']
+  styleUrls: ['./room.component.scss']
 })
 export class RoomComponent {
 
@@ -25,7 +25,7 @@ export class RoomComponent {
 
   // send room data to db
   sendRoom() {
-    this.dataService.putData(this.room);
+    this.dataService.putMaintenance(this.room);
   }
 
 

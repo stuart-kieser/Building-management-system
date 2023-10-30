@@ -14,6 +14,11 @@
             <td>{{notice.photo}}</td>
             <td>{{notice.roomnumber}}</td>
             <td>{{notice.time}}</td>
+            <td><input type="checkbox" (click)="selectComplaint(notice)"></td>
+        </tr>
+        <!-- Add selected logic to clear all selected -->
+        <tr>
+            <td><button (click)="clearSelected()">Clear selected</button></td>
         </tr>
     </table>
 </div>

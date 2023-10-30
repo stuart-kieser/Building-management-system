@@ -1,6 +1,6 @@
 export interface MaintenanceComplaint {
     issue: string,
-    desciption: string,
+    description: string,
     photo: any, //jpeg?
     roomnumber: number,
     time: string,

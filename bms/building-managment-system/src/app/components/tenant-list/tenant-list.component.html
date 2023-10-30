@@ -10,12 +10,25 @@
             <th>Payment Status</th>
         </tr>
         <tr *ngFor="let tenant of tenantList">
-            <td>{{tenant.name}}</td>
-            <td>{{tenant.surname}}</td>
-            <td>{{tenant.number}}</td>
-            <td>{{tenant.email}}</td>
-            <td>{{tenant.account}}</td>
-            <td>{{tenant.paymentStatus}}</td>
+            <td>
+                <div [routerLink]="'tenant'">{{tenant.name}}</div>
+            </td>
+            <td>
+                <div>{{tenant.surname}}</div>
+
+            </td>
+            <td>
+                <div>{{tenant.number}}</div>
+            </td>
+            <td>
+                <div>{{tenant.email}}</div>
+            </td>
+            <td>
+                <div>{{tenant.account}}</div>
+            </td>
+            <td>
+                <div>{{tenant.paymentStatus}}</div>
+            </td>
         </tr>
     </table>
 </div>

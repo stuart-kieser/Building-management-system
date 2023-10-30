@@ -5,4 +5,5 @@ export interface Tenant {
     email: string,
     account: string,
     paymentStatus: boolean,
+    password: "",
 }

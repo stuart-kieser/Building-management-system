@@ -10,8 +10,6 @@ Components needed for a bms (can expand)
 
     room (number, type, price, electricity, tenant, wifi)
 
-    employee (name, surname, number, email, role)
-
     maintenance-complaint (issue, photo, room number, time-ticket)
 
 

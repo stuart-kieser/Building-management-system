@@ -1,0 +1,24 @@
+.menu {
+    display: flex;
+    background-color: #333;
+    padding: 10px;
+
+    .menu-item {
+        margin-right: 20px;
+
+        .menu-link {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: #ff9900;
+            }
+
+            &.active {
+                color: #ff9900;
+            }
+        }
+    }
+}

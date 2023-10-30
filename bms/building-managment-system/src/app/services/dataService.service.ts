@@ -29,8 +29,23 @@ export class DataService {
     }
 
     // put data to an api endpoint
-    putData(data: any) {
+    putMaintenance(data: any) {
         // input into db
+        maintenanceComplaints.push(data);
+        console.log(data);
+    }
+
+    // put data to an api endpoint
+    putTenant(data: any) {
+        // input into db
+        tenantList.push(data);
+        console.log(data);
+    }
+
+    // put data to an api endpoint
+    putRoom(data: any) {
+        // input into db
+        roomsList.push(data);
         console.log(data);
     }
 

@@ -5,7 +5,7 @@ import { DataService } from 'src/app/services/dataService.service';
 @Component({
   selector: 'app-tenant',
   templateUrl: './tenant.component.html',
-  styleUrls: ['./tenant.component.sass']
+  styleUrls: ['./tenant.component.scss']
 })
 export class TenantComponent {
 
@@ -21,6 +21,7 @@ export class TenantComponent {
     email: "",
     account: "",
     paymentStatus: false,
+    password: "",
   }
 
 

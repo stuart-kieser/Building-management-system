@@ -4,7 +4,7 @@ import { DataService } from 'src/app/services/dataService.service';
 @Component({
   selector: 'app-room-list',
   templateUrl: './room-list.component.html',
-  styleUrls: ['./room-list.component.sass']
+  styleUrls: ['./room-list.component.scss']
 })
 export class RoomListComponent {
 

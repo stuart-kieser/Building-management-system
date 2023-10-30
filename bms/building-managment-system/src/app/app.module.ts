@@ -6,7 +6,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TenantComponent } from './components/tenant/tenant.component';
 import { RoomComponent } from './components/room/room.component';
-import { EmployeeComponent } from './components/employee/employee.component';
 import { MaintenanceComplaintComponent } from './components/maintenance-complaint/maintenance-complaint.component';
 import { MaintenanceListComponent } from './components/maintenance-list/maintenance-list.component';
 import { TenantListComponent } from './components/tenant-list/tenant-list.component';
@@ -17,13 +16,13 @@ import { TenantmanagementComponent } from './pages/tenantmanagement/tenantmanage
 import { MaintenancemanagementComponent } from './pages/maintenancemanagement/maintenancemanagement.component';
 import { LandingComponent } from './pages/landing/landing.component';
 import { NavComponent } from './pages/nav/nav.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TenantComponent,
     RoomComponent,
-    EmployeeComponent,
     MaintenanceComplaintComponent,
     MaintenanceListComponent,
     TenantListComponent,
@@ -34,6 +33,7 @@ import { NavComponent } from './pages/nav/nav.component';
     LandingComponent,
     NavComponent,
     RoomListComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,

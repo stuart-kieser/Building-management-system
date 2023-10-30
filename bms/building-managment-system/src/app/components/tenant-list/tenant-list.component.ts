@@ -6,7 +6,7 @@ import { tenantList } from 'mock-data/tenantlist';
 @Component({
   selector: 'app-tenant-list',
   templateUrl: './tenant-list.component.html',
-  styleUrls: ['./tenant-list.component.sass']
+  styleUrls: ['./tenant-list.component.scss']
 })
 export class TenantListComponent {
   // constructor to inject service

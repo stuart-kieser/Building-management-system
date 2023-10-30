@@ -5,18 +5,20 @@
 <form class="form-control">
     <div class="form-group">
         <!-- Set a name and id for ngModel to work -->
-        <input class="form-control" name="ticket" id="issue" [(ngModel)]="ticket.issue">
+        <input class="form-control" name="ticket" id="issue" [(ngModel)]="ticket.issue" placeholder="issue">
     </div>
     <div class="form-group">
-        <input class="form-control">
+        <input class="form-control" name="ticket" id="description" [(ngModel)]="ticket.description"
+            placeholder="description">
     </div>
     <div class="form-group">
-        <input class="form-control">
+        <input class="form-control" name="ticket" id="roomnumber" [(ngModel)]="ticket.roomnumber"
+            placeholder="roomnumber">
     </div>
     <div class="form-group">
-        <input class="form-control">
+        <input class="form-control" name="ticket" id="time" [(ngModel)]="ticket.photo" placeholder="photo">
     </div>
     <div class="form-group">
-        <button>Submit ticket</button>
+        <button (click)="sendComplaint(ticket)">Submit ticket</button>
     </div>
 </form>
