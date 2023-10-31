@@ -1,4 +1,13 @@
-<p>account works!</p>
-<app-tenant></app-tenant>
-<app-room></app-room>
-<app-maintenance-complaint></app-maintenance-complaint>
+<div class="account-container">
+    <p>Account</p>
+
+    <!-- Load these if logged in -->
+    <div class="links-container">
+        <a routerLink="/account/login">Login</a>
+        <a routerLink="/account/register">Register</a>
+    </div>
+
+    <div class="router-outlet-container">
+        <router-outlet></router-outlet>
+    </div>
+</div>

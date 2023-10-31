@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { Tenant } from '../tenant/tenant';
 import { DataService } from 'src/app/services/dataService.service';
-import { tenantList } from 'mock-data/tenantlist';
 
 @Component({
   selector: 'app-tenant-list',
@@ -11,7 +10,7 @@ import { tenantList } from 'mock-data/tenantlist';
 export class TenantListComponent {
   // constructor to inject service
   constructor(private dataService: DataService) {
-    this.fetchTenants(tenantList);
+    this.fetchTenants(this.tenantList);
   }
 
   // tenant list to hold tenant objects

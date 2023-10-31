@@ -1,5 +1,5 @@
 <p>maintenance-list works!</p>
-<div>
+<div class="maintenance-list-container">
     <table>
         <tr>
             <th>Issue</th>
@@ -14,7 +14,10 @@
             <td>{{notice.photo}}</td>
             <td>{{notice.roomnumber}}</td>
             <td>{{notice.time}}</td>
-            <td><input type="checkbox" (click)="selectComplaint(notice)"></td>
+            <td>
+                <input type="checkbox" id="checkbox{{notice.id}}" (click)="selectComplaint(notice)">
+                <label class="custom-checkbox" for="checkbox{{notice.id}}"></label>
+            </td>
         </tr>
         <!-- Add selected logic to clear all selected -->
         <tr>

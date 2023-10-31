@@ -1,0 +1,71 @@
+// styles.scss (or your component's .scss file)
+
+.maintenance-list-container {
+    // ... (previous styles)
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background-color: #ffffff;
+        border-radius: 5px;
+
+        th,
+        td {
+            padding: 15px;
+            border: 1px solid #e1e1e1;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+
+        td:last-child {
+            text-align: center;
+
+            // Style the label (custom checkbox)
+            label {
+                display: block;
+                position: relative;
+                padding-left: 35px;
+                cursor: pointer;
+                font-size: 18px;
+                line-height: 25px;
+
+                // Style the custom checkbox icon
+                .custom-checkbox {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 25px;
+                    width: 25px;
+                    background-color: #fff;
+                    border: 2px solid #3498db;
+                    border-radius: 5px;
+
+                    // Customize the checkmark (hidden by default)
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        display: none;
+                        left: 9px;
+                        top: 5px;
+                        width: 6px;
+                        height: 12px;
+                        border: solid #3498db;
+                        border-width: 0 2px 2px 0;
+                        transform: rotate(45deg);
+                    }
+                }
+            }
+
+            // Show the checkmark when checkbox is checked
+            input[type="checkbox"]:checked+.custom-checkbox:after {
+                display: block;
+            }
+        }
+    }
+}

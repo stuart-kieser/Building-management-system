@@ -1,0 +1,34 @@
+// styles.scss (or your component's .scss file)
+
+.account-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    p {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    div.links-container {
+        margin-bottom: 20px;
+
+        a {
+            font-size: 18px;
+            text-decoration: none;
+            color: #3498db;
+            display: block;
+            margin-bottom: 10px;
+            transition: color 0.3s;
+
+            &:hover {
+                color: #2980b9;
+            }
+        }
+    }
+
+}

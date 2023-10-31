@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class NavComponent {
 
+  // nav component currently exposes building info 
+  // nav comp for admin 
+  // nav comp for tenant
 }

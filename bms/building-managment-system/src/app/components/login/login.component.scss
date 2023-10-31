@@ -1,0 +1,56 @@
+// styles.scss (or your component's .scss file)
+
+.login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    p {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    h4 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    form {
+        div {
+            margin-bottom: 15px;
+
+            input {
+                width: 90%;
+                padding: 10px;
+                font-size: 16px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                outline: none;
+            }
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 12px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: #45a049;
+            }
+
+            &:active {
+                background-color: #64cb1f; // Change color when button is clicked
+                translate: 1px;
+            }
+        }
+    }
+}

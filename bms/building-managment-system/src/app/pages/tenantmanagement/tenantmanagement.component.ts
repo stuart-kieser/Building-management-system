@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./tenantmanagement.component.scss']
 })
 export class TenantmanagementComponent {
-
+  // data metric shown in page, own service
 }

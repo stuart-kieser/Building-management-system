@@ -13,7 +13,7 @@ export class TenantComponent {
 
   }
 
-  // tenant data type
+  // tenant data type is same as tenant, tenant is for adding potential tenant to db for checks
   tenant: Tenant = {
     name: "",
     surname: "",

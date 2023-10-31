@@ -15,8 +15,10 @@ import { RoomListComponent } from './components/room-list/room-list.component';
 import { TenantmanagementComponent } from './pages/tenantmanagement/tenantmanagement.component';
 import { MaintenancemanagementComponent } from './pages/maintenancemanagement/maintenancemanagement.component';
 import { LandingComponent } from './pages/landing/landing.component';
-import { NavComponent } from './pages/nav/nav.component';
+import { NavComponent } from './components/nav/nav.component';
 import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
+import { UserComponent } from './components/user/user.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +36,8 @@ import { LoginComponent } from './components/login/login.component';
     NavComponent,
     RoomListComponent,
     LoginComponent,
+    RegisterComponent,
+    UserComponent,
   ],
   imports: [
     BrowserModule,
