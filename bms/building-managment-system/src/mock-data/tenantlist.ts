@@ -1,5 +1,13 @@
 export const tenantList = [
     {
+        name: 'stu',
+        surname: 'Doe',
+        number: 1001,
+        email: 'stu@',
+        account: '123',
+        paymentStatus: true
+    },
+    {
         name: 'John',
         surname: 'Doe',
         number: 1001,

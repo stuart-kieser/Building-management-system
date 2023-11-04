@@ -2,15 +2,16 @@
     <p>Login</p>
     <div>
         <form>
-            <div>
-                <input placeholder="email" type="email">
+            <div class="form-group">
+                <input placeholder="email" type="email" name="user" [(ngModel)]="user.email">
+            </div>
+            <div class="form-group">
+                <input placeholder="password" type="password" name="user" [(ngModel)]="user.password">
             </div>
             <div>
-                <input placeholder="password" type="password">
+                <button (click)="fetchUser(user)" type="button">Login</button>
             </div>
-            <div>
-                <button>Login</button>
-            </div>
+            <div>{{user|json}}</div>
         </form>
     </div>
 </div>

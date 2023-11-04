@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class TenantmanagementComponent {
   // data metric shown in page, own service
+
 }

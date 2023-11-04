@@ -13,6 +13,8 @@ export class DataService {
     // the data service class will be specifically for fetching/sending data to and from apis
     // CRUD service == Data service?
     // fetch data from an api endpoint
+    user: any;
+
     fetchmaintenanceData(data: any) {
         console.log("RESPONSE 200");
         return maintenanceComplaints;
@@ -32,24 +34,26 @@ export class DataService {
     putMaintenance(data: any) {
         // input into db
         maintenanceComplaints.push(data);
-        console.log(data);
     }
 
     // put data to an api endpoint
     putTenant(data: any) {
         // input into db
-        tenantList.push(data);
-        console.log(data);
+        // this component for hared service
+        this.user = data;
+        //tenantList.push(data);
     }
 
     // put data to an api endpoint
     putRoom(data: any) {
         // input into db
         roomsList.push(data);
-        console.log(data);
     }
 
-
+    // retrive user from shared service
+    getTenant(user: any) {
+        return user;
+    }
 
 
 
