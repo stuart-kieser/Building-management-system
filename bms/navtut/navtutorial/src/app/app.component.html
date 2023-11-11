@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+
+<div>
+  <h1>Child 2 says: {{message}}</h1>
+</div>
+
+<div>
+  <app-child1 [data]="data"></app-child1>
+</div>
+
+<!-- This method is nice, parent component calls function to receive data -->
+<div>
+  <app-child2 (event)="receiveMessage($event)"></app-child2>
+</div>

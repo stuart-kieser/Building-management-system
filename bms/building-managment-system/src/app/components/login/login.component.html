@@ -9,7 +9,7 @@
                 <input placeholder="password" type="password" name="user" [(ngModel)]="user.password">
             </div>
             <div>
-                <button (click)="fetchUser(user)" type="button">Login</button>
+                <button (click)="fetchUser()" type="button">Login</button>
             </div>
             <div>{{user|json}}</div>
         </form>

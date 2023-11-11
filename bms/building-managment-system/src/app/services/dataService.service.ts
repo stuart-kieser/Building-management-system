@@ -3,6 +3,7 @@ import { Injectable } from "@angular/core";
 import { maintenanceComplaints } from 'src/mock-data/maintenancelist';
 import { roomsList } from 'src/mock-data/roomlist';
 import { tenantList } from 'src/mock-data/tenantlist';
+import { Tenant } from "../components/tenant/tenant";
 // Now you can use maintenancelist, roomlist, and tenantlist in this file
 
 @Injectable({
@@ -13,7 +14,7 @@ export class DataService {
     // the data service class will be specifically for fetching/sending data to and from apis
     // CRUD service == Data service?
     // fetch data from an api endpoint
-    user: any;
+    user: Tenant[] = [];
 
     fetchmaintenanceData(data: any) {
         console.log("RESPONSE 200");
@@ -40,7 +41,8 @@ export class DataService {
     putTenant(data: any) {
         // input into db
         // this component for hared service
-        this.user = data;
+        console.log(data, "put");
+        this.user.push(data);
         //tenantList.push(data);
     }
 

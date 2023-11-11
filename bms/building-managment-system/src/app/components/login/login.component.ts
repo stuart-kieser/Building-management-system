@@ -1,7 +1,7 @@
 import { Component, Output, EventEmitter } from '@angular/core';
 import { Login } from '../login/login';
 import { DataService } from 'src/app/services/dataService.service';
-import { Router } from '@angular/router';
+import { NavigationExtras, Router } from '@angular/router';
 import { Tenant } from '../tenant/tenant';
 
 //Angular material for pop up
@@ -23,7 +23,6 @@ export class LoginComponent {
 
   // temp holders
   templist: Tenant[] = []
-  tempuser: any;
 
   // constructor for dependancy 
   constructor(private dataService: DataService, private router: Router) {
@@ -33,25 +32,22 @@ export class LoginComponent {
 
 
 
-  // submit login form and check deets
-  fetchUser(user: any): void {
-    // logic to fetch user profile if password is correct   
-    // passing data from login function is hard and will need to be looked at in finer detail
-    for (this.tempuser in this.templist) {
-      if (this.tempuser === this.user.email && this.tempuser.account === this.user.password) {
-        this.dataService.putTenant(this.tempuser);
-        console.log(this.tempuser)
+  fetchUser() {
+    const params: NavigationExtras = {
+      queryParams: {
+        email: this.user.email
       }
-    };
-
-    console.log("Login successful")
-
-    this.router.navigate(['/account/user']);
-
+    }
+    this.router.navigate(["/account/user"], params);
   }
+
+  @Output() loginEvent = new EventEmitter<any>();
+
+
+
 }
 
-// login redirects to user-account component
+
 
 
 

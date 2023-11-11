@@ -3,23 +3,23 @@
     <div>
         <form>
             <!-- Input fields here -->
-            <div>
-                <input placeholder="name" type="string">
+            <div class="form-group">
+                <input placeholder="name" type="string" [(ngModel)]="user.name" name="user">
             </div>
-            <div>
-                <input placeholder="surname" type="string">
+            <div class="form-group">
+                <input placeholder="surname" type="string" [(ngModel)]="user.surname" name="user">
             </div>
-            <div>
-                <input placeholder="email" type="email">
+            <div class="form-group">
+                <input placeholder="email" type="email" [(ngModel)]="user.email" name="user">
             </div>
-            <div>
-                <input placeholder="number" type="number">
+            <div class="form-group">
+                <input placeholder="number" type="number" [(ngModel)]="user.number" name="user">
             </div>
-            <div>
-                <input placeholder="password" type="password">
+            <div class="form-group">
+                <input placeholder="account" type="password" [(ngModel)]="user.account" name="user">
             </div>
-            <div>
-                <button>Register</button>
+            <div class="form-group">
+                <button (click)="registerUser()">Register</button>
             </div>
         </form>
     </div>
