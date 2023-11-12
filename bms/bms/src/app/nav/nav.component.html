@@ -1,0 +1,10 @@
+<p>nav works!</p>
+
+<div>
+    <button (click)="navWithParams()" expand="full">Navigate with params</button>
+    <br>
+    <button (click)="navWithObject()" expand="full">Navigate with object</button>
+    <br>
+    <button routerLink="/tenant" [queryParams]="{name: 'bobby', email: 'bobby@gmail'}">Navigate with routerlink
+        params</button>
+</div>
